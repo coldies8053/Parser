@@ -1,0 +1,24 @@
+import spacy
+from AIdata import *
+
+
+class Parser():
+    def __init__(self,dictList):
+        self.nlp = spacy.load("en_core_web_sm")
+        self.dictList = dictList
+
+    def userInput(self, uncleared):
+        self.cleared = uncleared.lower().strip('?!,./"()[]{}')
+        self.doc = self.nlp(self.cleared)
+        self.lemmas = [token.lemma_ for token in self.doc if token.is_alpha]
+        self.check()
+    def check(self):
+        for dict1 in self.dictList:
+            for key, value in dict1.items():
+                if key in self.lemmas:
+                    for key1, value1 in value.items():
+                        if key1 in self.lemmas:
+                            print(value1)
+                            break
+parser = Parser(dictList)
+parser.userInput(input("Enter a question: "))
