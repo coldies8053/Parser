@@ -1,0 +1,101 @@
+fruit_facts = {
+    "apple": {
+        "category": "fruit",
+        "calorie": 52,
+        "fiber": 2.4,
+        "sugar": 10.4,
+        "vitamin c": 7
+    },
+    "banana": {
+        "category": "fruit",
+        "calorie": 89,
+        "fiber": 2.6,
+        "sugar": 12.2,
+        "potassium": 358
+    },
+    "orange": {
+        "category": "fruit",
+        "calorie": 47,
+        "fiber": 2.2,
+        "sugar": 9.4,
+        "vitamin c": 53
+    },
+    "grape": {
+        "category": "fruit",
+        "calorie": 69,
+        "fiber": 0.9,
+        "sugar": 15.5,
+        "antioxidants": "high"
+    }
+}
+
+physics_facts = {
+    "speed": {
+        "definition": "distance traveled per unit of time",
+        "unit": "m/s",
+        "formula": "speed = distance / time"
+    },
+    "force": {
+        "definition": "a push or pull on an object",
+        "unit": "newton",
+        "formula": "force = mass × acceleration"
+    },
+    "energy": {
+        "definition": "the capacity to do work",
+        "unit": "joule",
+        "type": ["kinetic", "potential", "thermal", "chemical"]
+    },
+    "gravity": {
+        "definition": "the force that attracts objects toward each other",
+        "value on Earth": "9.8 m/s²",
+        "type": "non-contact force"
+    }
+}
+
+body_facts = {
+    "heart": {
+        "function": "pumps blood through the body",
+        "type": "organ",
+        "location": "chest",
+        "beat": "60–100"
+    },
+    "brain": {
+        "function": "controls the body and processes information",
+        "type": "organ",
+        "part": ["cerebrum", "cerebellum", "brainstem"]
+    },
+    "lung": {
+        "function": "allow breathing and gas exchange",
+        "type": "organ",
+        "pair": 'yes'
+    }
+}
+
+dictionary = {
+    "modem": {
+        "definition": "Connects your network to the internet by converting signals."
+    },
+    "router": {
+        "definition": "Directs data between networks (e.g., home → internet)."
+    },
+    "switch": {
+        "definition": "Connects devices inside a network and sends data to the right one."
+    },
+    "wap": {
+        "definition": "Lets devices connect wirelessly (Wi-Fi) to the network."
+    },
+    "lan": {
+        "definition": "Local network in a small area (home, office)."
+    },
+    "man": {
+        "definition": "Network across a city or large campus."
+    },
+    "wan": {
+        "definition": "Network across countries/world (internet)."
+    },
+    "wlan": {
+        "definition": "Wireless LAN (uses Wi-Fi)."
+    }
+}
+
+dictList = [fruit_facts,physics_facts,body_facts]
